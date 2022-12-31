@@ -1,0 +1,12 @@
+.HeaderContainer{
+   
+    background-color:#5CB85C;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.HeaderContents{
+    color: #fff;
+}

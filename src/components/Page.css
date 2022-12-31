@@ -1,0 +1,27 @@
+.NavBar{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    background-color: #fff;
+    
+    
+}
+
+.NavOptions{
+display: flex;
+width: 250px;
+justify-content: space-between;
+}
+
+#heading{
+    color:#5CB85C;
+    font-size: 20px;
+}
+
+.NavOptions{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+h3:focus{
+    background-color:rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,16 @@
+input{
+    font-size: 1.25rem;
+    margin: 5px;
+    width: 500px;
+    padding: 0.75rem;
+
+}
+
+button{
+    margin:5px;
+    font-size: 1.25rem;
+    background-color:#5CB85C;
+    color:#fff;;
+    height: 50px;
+    width: 100px;
+}
