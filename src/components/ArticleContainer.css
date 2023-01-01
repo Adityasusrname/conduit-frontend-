@@ -8,4 +8,5 @@
 .ArticleContainer{
     width: 700px;
     border: 1px solid gray;
+    padding: 0.50rem;
 }
