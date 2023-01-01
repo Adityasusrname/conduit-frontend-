@@ -10,3 +10,11 @@
 .HeaderContents{
     color: #fff;
 }
+
+#name{
+    font-size: 50px;
+}
+
+#tagline{
+    font-size: 20px;
+}

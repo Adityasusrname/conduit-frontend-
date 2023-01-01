@@ -7,9 +7,9 @@ function Header(){
 
            <div className="HeaderContents">
 
-            <h1>conduit</h1>
+            <h1 id='name'>conduit</h1>
 
-            <h3>A place to share your knowledge.</h3>
+            <h3 id='tagline'>A place to share your knowledge.</h3>
             
             </div>
 
