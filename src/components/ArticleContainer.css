@@ -1,0 +1,11 @@
+.ArticleHeading{
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.ArticleContainer{
+    width: 700px;
+    border: 1px solid gray;
+}
