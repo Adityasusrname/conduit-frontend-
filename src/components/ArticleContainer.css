@@ -60,3 +60,13 @@
     color:#fff;
     cursor: pointer;
 }
+#ArticleFooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+#TagsContainer{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+}

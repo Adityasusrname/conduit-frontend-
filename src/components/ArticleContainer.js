@@ -1,9 +1,10 @@
 import './ArticleContainer.css'
+import TagsContainer from './TagsContainer'
 
 function ArticleContainer(props){
 
 
-    console.log(props)
+  
         
     var title= props.title
     var description = props.description
@@ -11,9 +12,10 @@ function ArticleContainer(props){
     var date = new Date(new Date(props.date).getTime()).toString().substring(4,15)
     var image = props.image
     var favoritesCount = props.favoritesCount
+    var tags = props.tags
 
 
-    console.log("Hello!!!")
+  
 
     return(
         <center>
@@ -39,6 +41,14 @@ function ArticleContainer(props){
             </div>
             <h2>{title}</h2>
             <h3 id="Description">{description}</h3>
+            <div id="ArticleFooter">
+                  <div id="ReadMore">
+                         Read More...
+                  </div>
+                  <div id="TagsContainer">
+                         <TagsContainer tags={tags}/>
+                  </div>
+            </div>
 
         </div>
         </center>

@@ -1,0 +1,15 @@
+.Tag{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ddd;
+    color:#aaa;
+    border-radius: 30px;
+    padding: 0.2rem;
+    
+}
+#TagListContainer{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+   
+}
