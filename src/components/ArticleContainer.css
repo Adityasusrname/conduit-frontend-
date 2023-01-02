@@ -7,6 +7,56 @@
 
 .ArticleContainer{
    width: 900px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.50rem;
+   border-top: 1px solid rgba(0, 0, 0, 0.1);
+   padding: 0.50rem;
+   }
+
+.ArticleInfo{
+     display: flex;
+     column-gap: 20px;
+}
+
+.NameAndDateContainer{
+
+    display: flex;
+    flex-direction:column;
+    
+    
+}
+
+#Username{
+    color:#5CB85C;
+}
+
+#Description{
+    color: #999;
+}
+
+#Image{
+    width:32px;
+    height:32px;
+    border-radius:30px;
+    background-color: #5CB85C;
+}
+
+#Date{
+   
+   display: flex;
+   justify-content: flex-start;
+   color: #999;
+}
+
+#LikeButton{
+    background-color: transparent;
+    color: #5CB85C;
+    width: 70px;
+    height: 30px;
+    font-size: 0.85rem;
+    border: 1px solid #5CB85C;
+}
+
+#LikeButton:hover{
+    background-color: #5CB85C;
+    color:#fff;
+    cursor: pointer;
 }

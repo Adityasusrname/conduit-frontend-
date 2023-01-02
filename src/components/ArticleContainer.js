@@ -2,8 +2,15 @@ import './ArticleContainer.css'
 
 function ArticleContainer(props){
 
+
+    console.log(props)
+        
     var title= props.title
     var description = props.description
+    var username = props.username
+    var date = new Date(new Date(props.date).getTime()).toString().substring(4,15)
+    var image = props.image
+    var favoritesCount = props.favoritesCount
 
 
     console.log("Hello!!!")
@@ -14,19 +21,24 @@ function ArticleContainer(props){
 
             <div className="ArticleHeading">
 
-                <div className="AuthorandTime">
-                  <h3>Hello I am author</h3>
+                <div className="ArticleInfo">
+                  <div className='ImageContainer'><div id='Image'><img src={image}/></div></div>
+                  <div className='NameAndDateContainer'>
+                    <div id='Username'>{username}</div>
+                    <div id="Date">{date}</div>
+                    </div>
+
                 </div>
 
-                <div className="Likes">
+                <div className="LikeButtonContainer">
 
-                    <h3>Hello I am likes!</h3>
+                    <button id='LikeButton'>{favoritesCount}</button>
 
                 </div>
 
             </div>
             <h2>{title}</h2>
-            <h3>{description}</h3>
+            <h3 id="Description">{description}</h3>
 
         </div>
         </center>

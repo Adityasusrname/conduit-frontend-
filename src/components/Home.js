@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import ArticlesContainer from "./ArticlesContainer";
-import FeedNavBar from "./FeedNavBar";
 import Header from "./Header";
+import './Home.css'
+import FeedNavBar from "./FeedNavBar";
 
 function Home(){
 
@@ -30,8 +31,10 @@ function Home(){
         <div>
 
             <Header/>
+            <div id="Feed">
             <FeedNavBar/>
-           {articlesList}
+            {articlesList} 
+           </div>
            
 
         </div>

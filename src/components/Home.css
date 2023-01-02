@@ -1,0 +1,7 @@
+#Feed{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    column-gap: 0px;
+    
+}

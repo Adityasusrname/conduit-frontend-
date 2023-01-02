@@ -1,0 +1,19 @@
+.FeedNavBarContainer{
+    width: 900px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom:0px;
+}
+
+.FeedNavBarContainer>div{
+  display: block;
+  padding: 0.5rem;
+  color:#5CB85C;
+  border-bottom: 1px solid #5CB85C;
+  
+}
+
+.FeedNavBarContainer>div:hover{
+    cursor: pointer;
+}

@@ -1,11 +1,14 @@
+import './FeedNavBar.css'
 function FeedNavBar(){
     return(
+        <center>
         <div className="FeedNavBarContainer">
 
-            <h3>Global Feed</h3>
+        <div>Global Feed</div>
 
 
         </div>
+        </center>
     )
 }
 
