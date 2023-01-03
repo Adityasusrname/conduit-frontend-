@@ -58,7 +58,7 @@ function ArticleContainer(props){
 
     function clicked(){
        
-        store.dispatch({type:'Set/SignIn'})
+        store.dispatch({type:'Set/ArticlePage',prevValue:store.getState().value})
         console.log(store.getState())
         
     }

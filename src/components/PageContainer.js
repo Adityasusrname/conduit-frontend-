@@ -1,3 +1,4 @@
+import ArticlePage from "./ArticlePage";
 import Home from "./Home";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
@@ -12,6 +13,8 @@ function PageContainer(props){
     pageOption = <SignIn/>
     else if(props.pageOption==='SignUp')
     pageOption=<SignUp/>
+    else if(props.pageOption==='ArticlePage')
+    pageOption=<ArticlePage/>
 
     return(
         <div className="Page">
