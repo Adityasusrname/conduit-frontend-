@@ -1,22 +1,27 @@
 import { useEffect, useState } from 'react';
+import { store } from '../store/GlobalState';
+
 import './Page.css';
 import PageContainer from './PageContainer';
 
-function Page(){
+function Page(props){
 
-    const [page,setPage] = useState('Home')
-    const [optionClicked,setoptionClicked] = useState('Home')
 
-  var pageContainer =   <PageContainer pageOption={page}/>
+    var pageOption = props.pageOption
    
-    useEffect(()=>{
-        document.getElementById(optionClicked).style.color='rgba(0, 0, 0, 0.8)'
-        
-    },[optionClicked])
 
-    useEffect(()=>{
-           pageContainer = <PageContainer pageOption={page}/>
-    },[page])
+    useEffect(() => {
+       
+      
+        document.getElementById(pageOption).style.color='rgba(0, 0, 0, 0.8)'
+      
+      }, [pageOption]);
+
+  var pageContainer =   <PageContainer pageOption={pageOption}/>
+   
+   
+
+
     return(
         
         <div className='Page'>
@@ -33,7 +38,9 @@ function Page(){
        <h3 onClick={HomeClicked} id='Home'>Home</h3>
        <h3 onClick={SignInClicked} id='SignIn'>Sign in</h3>
       <h3  onClick={SignUpClicked} id='SignUp'>Sign Up</h3>
-
+        
+     
+     
     </div>
    
              </div>
@@ -41,6 +48,7 @@ function Page(){
            </div>
 
      {pageContainer}
+     
 
 
         </div>
@@ -48,20 +56,23 @@ function Page(){
     )
 
     function HomeClicked(event){
-        document.getElementById(optionClicked).style.color='rgba(0, 0, 0, 0.3)'
-        setoptionClicked(event.target.id)
-        setPage('Home')
+        document.getElementById(pageOption).style.color='rgba(0, 0, 0, 0.3)'
+        store.dispatch({type:'Set/Home'})
+        
+       
     }
     function SignInClicked(event){
-        document.getElementById(optionClicked).style.color='rgba(0, 0, 0, 0.3)'
-        setoptionClicked(event.target.id)
-         setPage('SignIn')
+        document.getElementById(pageOption).style.color='rgba(0, 0, 0, 0.3)'
+        store.dispatch({type:'Set/SignIn'})
+       
     }
     function SignUpClicked(event){
-        document.getElementById(optionClicked).style.color='rgba(0, 0, 0, 0.3)'
-        setoptionClicked(event.target.id)
-        setPage('SignUp')
+        document.getElementById(pageOption).style.color='rgba(0, 0, 0, 0.3)'
+        store.dispatch({type:'Set/SignUp'})
+       
+      
     }
+   
 
    
 

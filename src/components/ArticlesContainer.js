@@ -1,5 +1,6 @@
 import ArticleContainer from "./ArticleContainer"
 
+
 function ArticlesContainer(props){
 
     const articles = props.articles
@@ -8,8 +9,10 @@ function ArticlesContainer(props){
 
         
       
-    return (<ArticleContainer title={article.title} description={article.description} username={article.author.username} date={article.createdAt}
+    return (<ArticleContainer key={id} title={article.title} description={article.description} username={article.author.username} date={article.createdAt}
              image={article.author.image} favoritesCount={article.favoritesCount} tags={article.tagList}
+
+
     />)
 
      
@@ -23,6 +26,8 @@ function ArticlesContainer(props){
         {listArticles}
         </div>
     )
+
+
 
 }
 

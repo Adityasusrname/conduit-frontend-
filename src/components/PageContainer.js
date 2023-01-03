@@ -5,7 +5,7 @@ import SignUp from "./SignUp";
 function PageContainer(props){
 
    var pageOption = <Home/>
-   
+   console.log(props)
     if(props.pageOption==='Home')
     pageOption = <Home/>
     else if(props.pageOption==='SignIn')

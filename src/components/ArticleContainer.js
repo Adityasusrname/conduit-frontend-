@@ -1,3 +1,4 @@
+import { store } from '../store/GlobalState'
 import './ArticleContainer.css'
 import TagsContainer from './TagsContainer'
 
@@ -13,7 +14,8 @@ function ArticleContainer(props){
     var image = props.image
     var favoritesCount = props.favoritesCount
     var tags = props.tags
-
+   
+   
 
   
 
@@ -39,10 +41,10 @@ function ArticleContainer(props){
                 </div>
 
             </div>
-            <h2>{title}</h2>
-            <h3 id="Description">{description}</h3>
+            <h2 id="Title" onClick={clicked}>{title}</h2>
+            <h3 id="Description" onClick={clicked}>{description}</h3>
             <div id="ArticleFooter">
-                  <div id="ReadMore">
+                  <div id="ReadMore" onClick={clicked}>
                          Read More...
                   </div>
                   <div id="TagsContainer">
@@ -53,6 +55,13 @@ function ArticleContainer(props){
         </div>
         </center>
     )
+
+    function clicked(){
+       
+        store.dispatch({type:'Set/SignIn'})
+        console.log(store.getState())
+        
+    }
     
 
 

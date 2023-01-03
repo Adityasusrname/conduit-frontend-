@@ -70,3 +70,18 @@
     display: flex;
     justify-content: flex-end;
 }
+#Description:hover{
+    cursor: pointer;
+}
+#Title{
+    cursor: pointer;
+}
+#Image:hover{
+    cursor: pointer;
+}
+#Username:hover{
+    cursor: pointer;
+}
+#ReadMore:hover{
+    cursor: pointer;
+}
