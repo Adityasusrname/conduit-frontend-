@@ -16,7 +16,7 @@ export function render(){
   
     root.render(
       <React.StrictMode>
-        <App pageOption={store.getState().value}/>
+        <App pageOption={store.getState().CurrentNavTab}/>
       </React.StrictMode>
     )
 

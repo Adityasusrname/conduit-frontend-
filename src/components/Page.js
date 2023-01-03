@@ -10,14 +10,14 @@ function Page(props){
 
     var pageOption = props.pageOption
 
-    console.log(store.getState().prevValue)
+    console.log(store.getState().PrevNavTab)
    
 
     useEffect(() => {
        
         
        var currentElement = document.getElementById(pageOption)
-       var prevElement = document.getElementById(store.getState().prevValue)
+       var prevElement = document.getElementById(store.getState().PrevNavTab)
 
    
    
@@ -79,18 +79,18 @@ function Page(props){
 
     function HomeClicked(event){
         
-        store.dispatch({type:'Set/Home',prevValue:pageOption})
+        store.dispatch({type:'Set/Home',PrevNavTab:pageOption})
         
        
     }
     function SignInClicked(event){
        
-        store.dispatch({type:'Set/SignIn',prevValue:pageOption})
+        store.dispatch({type:'Set/SignIn',PrevNavTab:pageOption})
        
     }
     function SignUpClicked(event){
         
-        store.dispatch({type:'Set/SignUp',prevValue:pageOption})
+        store.dispatch({type:'Set/SignUp',PrevNavTab:pageOption})
        
       
     }

@@ -1,25 +1,24 @@
 import { createStore } from "redux";
 import { render } from "..";
-import Page from "../components/Page";
-import PageContainer from "../components/PageContainer";
 
 
-function SetNavBarOption(state={value:'Home',prevValue:''},action){
+
+function SetGlobalState(state={CurrentNavTab:'Home',PrevNavTab:'',Slug:''},action){
     switch(action.type){
         case 'Set/Home':
-            return {value:'Home',prevValue:action.prevValue}
+            return {CurrentNavTab:'Home',PrevNavTab:action.PrevNavTab}
         case 'Set/SignIn':
-            return {value:'SignIn',prevValue:action.prevValue}
+            return {CurrentNavTab:'SignIn',PrevNavTab:action.PrevNavTab}
         case 'Set/SignUp':
-            return {value:'SignUp',prevValue:action.prevValue}
+            return {CurrentNavTab:'SignUp',PrevNavTab:action.PrevNavTab}
         case 'Set/ArticlePage':
-            return {value:'ArticlePage',prevValue:action.prevValue}
+            return {CurrentNavTab:'ArticlePage',PrevNavTab:action.PrevNavTab,Slug:action.slug}
         default:
             return state
     }
 }
 
-export let store = createStore(SetNavBarOption)
+export let store = createStore(SetGlobalState)
 
 store.subscribe(render)
 

@@ -14,6 +14,9 @@ function ArticleContainer(props){
     var image = props.image
     var favoritesCount = props.favoritesCount
     var tags = props.tags
+    var slug = props.slug
+
+    
    
    
 
@@ -57,9 +60,11 @@ function ArticleContainer(props){
     )
 
     function clicked(){
+
+        console.log(slug)
        
-        store.dispatch({type:'Set/ArticlePage',prevValue:store.getState().value})
-        console.log(store.getState())
+        store.dispatch({type:'Set/ArticlePage',PrevNavTab:store.getState().CurrentNavTab,slug:slug})
+        
         
     }
     

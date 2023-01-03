@@ -10,7 +10,7 @@ function ArticlesContainer(props){
         
       
     return (<ArticleContainer key={id} title={article.title} description={article.description} username={article.author.username} date={article.createdAt}
-             image={article.author.image} favoritesCount={article.favoritesCount} tags={article.tagList}
+             image={article.author.image} favoritesCount={article.favoritesCount} tags={article.tagList} slug={article.slug}
 
 
     />)

@@ -1,0 +1,28 @@
+#ArticlePageFooterContainer{
+    height: 60px;
+    display: flex;
+    column-gap:20px;
+    }
+
+#FollowButton{
+    background-color: transparent;
+    color: #ccc;
+    width: 180px;
+    height: 30px;
+    font-size: 0.85rem;
+    border: 1px solid #ccc;
+}
+#FollowButton:hover{
+    background-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+
+}
+#LikeButton{
+    background-color: transparent;
+    color: #5CB85C;
+    width: 150px;
+    height: 30px;
+    font-size: 0.85rem;
+    border: 1px solid #5CB85C;
+}
