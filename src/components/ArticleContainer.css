@@ -26,6 +26,7 @@
 
 #Username{
     color:#5CB85C;
+    font-size: 15px;
 }
 
 #Description{
@@ -44,6 +45,7 @@
    display: flex;
    justify-content: flex-start;
    color: #999;
+   font-size: 15px;
 }
 
 #LikeButton{

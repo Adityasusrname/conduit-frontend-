@@ -24,7 +24,7 @@ function ArticlePageFooter(props){
 
             <div >
                         <button id="FollowButton">+Follow {username}</button>
-                        <button id="LikeButton">Favourite Article({favoritesCount})</button>
+                        <button id="FavButton">Favourite Article({favoritesCount})</button>
             </div>
 
         </div>

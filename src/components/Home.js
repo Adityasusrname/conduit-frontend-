@@ -16,7 +16,7 @@ function Home(){
         fetch("https://api.realworld.io/api/articles").then(data=>{
             return data.json()
         }).then(response=>{
-            
+            console.log(response)
             setFetched(true)
             setArticlesList(<ArticlesContainer articles={response.articles}/>)
         })

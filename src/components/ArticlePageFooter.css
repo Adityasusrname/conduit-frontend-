@@ -18,11 +18,17 @@
     cursor: pointer;
 
 }
-#LikeButton{
+#FavButton{
     background-color: transparent;
     color: #5CB85C;
     width: 150px;
     height: 30px;
     font-size: 0.85rem;
     border: 1px solid #5CB85C;
+}
+#FavButton:hover{
+    background-color: #5CB85C;
+    color: #fff;
+    cursor: pointer;
+    
 }
